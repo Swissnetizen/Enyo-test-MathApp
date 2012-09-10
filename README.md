@@ -1,4 +1,4 @@
-bootplate
+MathApp
 =========
 
 Application template for packaged Enyo
