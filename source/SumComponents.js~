@@ -1,0 +1,17 @@
+var SumComponents = [
+    {kind: "onyx.Toolbar", content: "Math App",},
+    {tag: "h1", name: "Problem", content: "Press Submit To Start" + " =", classes: "enyo-inline",},
+    {kind: "onyx.InputDecorator", classes: "enyo-inline", components: [
+    {kind: "onyx.Input", name: "Answer", onkeydown: "AnswerKeyDown",},{kind: "onyx.Button", name: "Submit", content: "Submit", ontap: "SubmitFunc"}
+    ],},
+    {name: "FailPopup", kind: "onyx.Popup", floating: true, centered: true, scrim: true,
+        style: "padding: 10px+", components: [
+        
+            {tag: "h1", content: "You were WRONG!",},
+            {name:"CorrectAnswer", content: "",},
+            {name: "Ok",kind: "onyx.Button", content: "Okay", ontap: "OkFailPopup",}
+            ],  
+    
+    
+    }
+	];

@@ -92,7 +92,7 @@ enyo.kind({
 	    if (this.$.Answer.hasNode().value == this.CorrectResult) {
 	        this.NewProblem();
         } else {
-            this.$.CorrectAnswer.content = "The Correct Answer was: " + this.CorrectResult;
+            this.$.CorrectAnswer.content = this.CorrectResult;
             this.$.CorrectAnswer.render();
             this.$.FailPopup.show();
             
