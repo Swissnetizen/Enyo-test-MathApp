@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.Samarth.Applications.Mobile.Public.Math"
+        id        = "com.samarth.apps.mobile.public.math"
         versionCode="10" 
         version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Math</name>
+
+    <description>
+        NO 
+    </description>
+
+    <author href="samink.tk" email="samu.agarwal@gmail.com">
+       Samarth AGARWAL 
+    </author>
+
+</widget>
