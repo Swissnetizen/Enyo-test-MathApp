@@ -9,6 +9,8 @@ enyo.kind({
     ProblemType: 0,
     ProblemTypeString: "0", 
     ProblemTypes: new Array("", "+", "-", "x", "/"),
+    CorrectAnswers: 0,
+    MaxDecimals: 2,
     
 	
 	
@@ -30,23 +32,7 @@ enyo.kind({
 	    //reset the correct answer to nothing
 	    this.$.CorrectAnswer.content = "";
 	},
-	//fiqures out how many decimal places are in a number
-	CalculateDecimalPlaces: function(number) {
-	    number += "";
-	    var PassedDecimalPoint = false;
-	    var DecimalPlaces = 0;
-	    for (i=0; i<number.length; i++) {
-            if(PassedDecimalPoint)  {
-	            DecimalPlaces += 1;
-            } else if(number[i] == ".")  {
-                PassedDecimalPoint = true;
-            }
-            
-            
-           }
-           return DecimalPlaces;
-          },
-                
+	
 	        
 	//Sets a new problem
 	NewProblem: function() {
@@ -54,28 +40,32 @@ enyo.kind({
         this.n2 = Math.floor(Math.random() * 10+1);
 	    this.ProblemType = Math.floor(Math.random() * 4+1);
 	    this.$.Answer.hasNode().value = "";
-	    var DecimalPlaces = 0;
+	
 	
 	// figures out what type the problem is and does special actions according to that 
 	    switch(this.ProblemType) {
            //Addition
             case 1:
-	            this.CorrectResult = this.n1 + this.n2;
+                //Rounds the answer to 2 d.p.            
+	            this.CorrectResult = RoundNumber(this.n1 + this.n2, this.MaxDecimals);
 	            this.ProblemTypeString = "+";
 	            break;
             //Subtration
             case 2:
-                this.CorrectResult = this.n1 - this.n2;
+             //Rounds the answer to 2 d.p.       
+                this.CorrectResult = RoundNumber(this.n1 - this.n2, this.MaxDecimals);
                 this.ProblemTypeString = "-";
                 break;
              //Multiplication
             case 3: 
-                this.CorrectResult = this.n1 * this.n2;
+             //Rounds the answer to 2 d.p.       
+                this.CorrectResult = RoundNumber(this.n1 * this.n2, this.MaxDecimals);
                 this.ProblemTypeString = "x";
                 break;
             //devision
             case 4:
-                this.CorrectResult = this.n1 / this.n2;
+             //Rounds the answer to 2 d.p.       
+                this.CorrectResult = RoundNumber(this.n1 / this.n2, this.MaxDecimals);
                 this.ProblemTypeString = "/";
                 break;
         
@@ -89,7 +79,7 @@ enyo.kind({
 	},
 	// Is called when the user presse the submit button or the enter key
 	SubmitFunc: function(inEvent, inSender) {
-	    if (this.$.Answer.hasNode().value == this.CorrectResult) {
+	    if (RoundNumber(this.$.Answer.hasNode().value, 2) == this.CorrectResult) {
 	        this.NewProblem();
         } else {
             this.$.CorrectAnswer.content = "The Correct Answer was: " + this.CorrectResult;

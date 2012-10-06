@@ -1,12 +1,19 @@
 var SumComponents = [
 // the toolbar at the top of the page indicating the title
-    {kind: "onyx.Toolbar", content: "Math App",},
+ {kind: "onyx.MoreToolbar", name: "HeaderToolbar", components: [
+		{content: "Math"}
+		]},
+	{kind:"onyx.Groupbox", components:[
     //The problem that the user has to solve
-    {tag: "h1", name: "Problem", content: "Press Submit To Start" + " =", classes: "enyo-inline",},
+    {name: "Problem", content: "Press Submit To Start" + " =", style: "padding: 8px;",},
     //the input(Decorator) where the user will enter the code
-    {kind: "onyx.InputDecorator", classes: "enyo-inline", components: [
+    {kind: "onyx.InputDecorator",  components: [
     // the actually input                                                the submit button
-    {kind: "onyx.Input", name: "Answer", onkeydown: "AnswerKeyDown",},{kind: "onyx.Button", name: "Submit", content: "Submit", ontap: "SubmitFunc"}
+    {kind: "onyx.Input", style: "width: 100%", name: "Answer", onkeydown: "AnswerKeyDown",},
+ 
+    ],},
+       {kind: "onyx.Button", content:"Submit", ontap:"SubmitFunc", style: "width: 100%"}
+    
     ],},
     //The popup that is displayed when the user fails
     {name: "FailPopup", kind: "onyx.Popup", floating: true, centered: true, scrim: true,
