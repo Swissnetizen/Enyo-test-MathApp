@@ -1,5 +1,5 @@
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/fittable/source/FittableLayout.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/fittable/source/FittableLayout.css */
 
 .enyo-fittable-rows-layout {
 	position: relative;
@@ -71,7 +71,7 @@
 	margin-bottom: 0 !important;
 }
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/list/source/List.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/list/source/List.css */
 
 .enyo-list {
 	position: relative;
@@ -89,7 +89,7 @@
 	right: 0;
 }
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/list/source/PulldownList.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/list/source/PulldownList.css */
 
 .enyo-list-pulldown {
 	position: absolute;
@@ -152,7 +152,7 @@
 	-ms-transform: rotate(180deg);
 }
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/panels/source/arrangers/Arranger.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/panels/source/arrangers/Arranger.css */
 
 .enyo-arranger {
 	position: relative;
@@ -185,7 +185,7 @@
 }
 
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/panels/source/Panels.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/panels/source/Panels.css */
 
 .enyo-panels {
 }
@@ -200,7 +200,7 @@
 	}
 }
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/tree/source/Node.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/tree/source/Node.css */
 
 .enyo-node {
 	cursor: default;
@@ -232,7 +232,7 @@
 }
 
 
-/* /home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/onyx/source/css/onyx.css */
+/* /var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/onyx/source/css/onyx.css */
 
 /* onyx.css - combined CSS file for all released Onyx controls.
    converted from single files to get around IE bug that allows

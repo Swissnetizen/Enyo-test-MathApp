@@ -1,7 +1,7 @@
 
 // minifier: path aliases
 
-enyo.path.addPaths({layout: "/home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/layout/", onyx: "/home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/onyx/", onyx: "/home/samarth/Insync/samu.agarwal@gmail.com/Projects/MathApp/enyo/tools/../../lib/onyx/source/"});
+enyo.path.addPaths({layout: "/var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/layout/", onyx: "/var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/onyx/", onyx: "/var/lib/stickshift/ebf650b0eeff46f0a4aacc7348cccb80/app-root/data/296336/enyo/tools/../../lib/onyx/source/"});
 
 // FittableLayout.js
 
@@ -2605,6 +2605,9 @@ kind: "onyx.MoreToolbar",
 name: "HeaderToolbar",
 components: [ {
 content: "Math"
+}, {
+kind: "onyx.Button",
+content: "Hello Button"
 } ]
 }, {
 kind: "onyx.Groupbox",

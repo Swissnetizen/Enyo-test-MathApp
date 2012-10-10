@@ -1,7 +1,7 @@
 var SumComponents = [
 // the toolbar at the top of the page indicating the title
  {kind: "onyx.MoreToolbar", name: "HeaderToolbar", components: [
-		{content: "Math"}
+		{content: "Math"},{kind: "onyx.Button", content:"Hello Button"}
 		]},
 	{kind:"onyx.Groupbox", components:[
     //The problem that the user has to solve
