@@ -1,4 +1,4 @@
-MathApp
+[Inactive]MathApp
 =========
 
 Application template for packaged Enyo
